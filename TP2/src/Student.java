@@ -32,6 +32,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return firstname + " " + lastname + " " + '(' + id + ')' + "\n";
+        return firstname + " " + lastname + " " + '(' + id + ')';
     }
 }

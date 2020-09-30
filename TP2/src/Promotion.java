@@ -26,7 +26,7 @@ public class Promotion {
 
     public void printToConsole() {
         for (Student student : studentList) {
-            student.toString();
+            System.out.println(student.toString());
         }
     }
 }
