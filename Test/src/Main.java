@@ -1,7 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-
         Point p = null ; // Point p = new Point();
         p = new Point(3, 14);
         p.writeCoordinates() ;
