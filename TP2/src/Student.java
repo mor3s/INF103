@@ -34,4 +34,22 @@ public class Student {
     public String toString() {
         return firstname + " " + lastname + " " + '(' + id + ')';
     }
+
+    int compareTo(Student anotherStudent) {
+        int compareLast = this.lastname.compareTo(anotherStudent.lastname);
+        int compareFirst = this.firstname.compareTo(anotherStudent.firstname);
+
+        if (compareLast != 0) {
+            return compareLast;
+        }
+        if (compareFirst != 0) {
+            return compareFirst;
+        }
+        if (this.id < anotherStudent.id) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+
 }
